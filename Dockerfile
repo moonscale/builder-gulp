@@ -13,3 +13,7 @@ RUN echo "user0:x:1000:1000:User 0:/tmp:/bin/false" >> /etc/passwd && \
     echo "user2:x:1002:1002:User 2:/tmp:/bin/false" >> /etc/passwd && \
     echo "user3:x:1003:1003:User 3:/tmp:/bin/false" >> /etc/passwd && \
     echo "user4:x:1004:1004:User 4:/tmp:/bin/false" >> /etc/passwd
+
+ADD ./build.sh /build.sh
+
+CMD /build.sh
